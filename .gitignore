@@ -124,3 +124,9 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+# Generated Certificates
+src/test/resources/*.key
+src/test/resources/*.crt
+src/test/resources/*.srl
+src/test/resources/*.creds
+src/test/resources/*.p12
