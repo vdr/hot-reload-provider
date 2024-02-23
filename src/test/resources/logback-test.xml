@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+  <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <pattern>%date %highlight(%-5level) [%thread] - %msg%n</pattern>
+    </encoder>
+  </appender>
+
+  <!-- When something wrong happens in testing, you generally need at least this -->
+  <logger name="vdr.jsse" level="DEBUG"/>
+  <logger name="vdr.jsse.integration" level="DEBUG"/>
+  <!-- But the following can get verbose at Debug or Trace level -->
+  <logger name="vdr.jsse.utils" level="INFO"/>
+  <logger name="vdr.jsse.logging" level="INFO"/>
+
+  <!-- Useful to debug the NIO Test engine
+  <logger name="vdr.jsse.test.engine" level="TRACE"/>
+  -->
+
+  <root level="INFO">
+    <appender-ref ref="console"/>
+  </root>
+
+</configuration>
