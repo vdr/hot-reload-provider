@@ -22,15 +22,16 @@ import vdr.jsse.test.engine.TLSRecord;
  * A tweaked version of Oracle provided <a href='https://docs.oracle.com/javase/8/docs/technotes/guides/security/jsse/samples/sslengine/SSLEngineSimpleDemo.java'>Java8 SSLEngineSimpleDemo</a>.
  * <p>
  *     Adds multiple Keystores, and display the Principal of peers. Uses mTLS to identify Client with Server.
- *     Configure to use EssJSSE.
+ *     Configure to use HotReload provider.
  * </p>
  * <p>
  *     As the original, this is simplified to an absurd point and is not a basis for production code.
  *     It is however intended to be read with Java SSL Debug logging enabled, see {@link #debug}.<br/>
  *     When running on Java8, the cypher suite TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 should be selected by default,
  *     there are many resource only that describe the handshake for that specific suite.<br/>
- *     Although it uses EssJSSE, it does not affect comprehension of Java SSL Debug output and allow checking EssJSSE own
- *     logging in addition. However, it is possible to use SunJSSE as in the original file.
+ *     Although it uses HotReload provider, it does not affect comprehension of Java SSL Debug output
+ *     and provides additional custom logging.
+ *     However, it is possible to use SunJSSE as in the original file.
  * </p>
  * <p>
  *     The rest of the documentation is copied from Oracle original:

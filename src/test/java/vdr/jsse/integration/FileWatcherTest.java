@@ -32,7 +32,7 @@ class FileWatcherTest {
 
     @BeforeAll
     static void setup() throws IOException {
-        tempdir = Files.createTempDirectory("essjsse_watcher").toAbsolutePath();
+        tempdir = Files.createTempDirectory("hotreload_watcher").toAbsolutePath();
     }
 
     @BeforeEach

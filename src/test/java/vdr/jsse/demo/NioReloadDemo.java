@@ -18,7 +18,7 @@ import vdr.jsse.test.engine.PlainChannel;
 import vdr.jsse.test.engine.SslChannel;
 
 /**
- * Demo of EssSecurity used in TLSv1.2 and TLSv1.3 with and without reload. Uses custom NIO client and server.
+ * Demo of HotReloadProvider used in TLSv1.2 and TLSv1.3 with and without reload. Uses custom NIO client and server.
  */
 public class NioReloadDemo {
 	private static final Logger LOG = LoggerFactory.getLogger(NioReloadDemo.class);
